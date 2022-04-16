@@ -1,0 +1,176 @@
+// Imports
+@import 'variables';
+@import 'mixins';
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap');
+// Styles
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body{
+    background: $coolWhite;
+}
+
+@media screen and(min-width: 60em) {
+    .grid-col-span{
+        grid-column: span 2;
+    }
+    .testimonies{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .grid-adjust{
+        grid-column: 4;
+        grid-row: 1 / 3;
+    }    
+}
+
+
+
+//grid layout
+.testimonies{
+    display: grid;
+    gap: 1.5rem;
+    margin: 20px;
+}
+
+// Normal Layout
+.card-a{
+    color: $white; //doesn't change
+    background-color: $modViolet; //doesn't change
+    border-radius: 10px;
+    .title{
+            @include title-styler;
+        img{
+            @include img-styler;
+            border: 3px solid $profileViolet; //doesn't change
+        }
+        .title-text{
+            padding: 0px 5px;
+        }
+        p{
+            color: $lightWhite; 
+            @include p-styler;
+        }
+    }
+    .intro-title{
+        padding: 10px 30px;
+    }
+    .testimony{
+        @include testimony;
+    }
+}
+
+// styles card-b
+
+.card-b{
+    color: $white; //doesn't change
+    background-color: $greyBlue; //doesn't change
+    border-radius: 10px;
+    .title{
+        @include title-styler;
+        img{
+            @include img-styler;
+            border: 3px solid $profGreyBlue; //doesn't change
+        }
+        .title-text{
+            padding: 0px 5px;
+        }
+        p{
+            color: $lightWhite; //doesn't change
+            @include p-styler;
+        }
+    }
+    .intro-title{
+        padding: 10px 30px;
+    }
+    .testimony{
+        @include testimony;
+    }
+}
+
+// styles card-c
+
+.card-c{
+    color: $greyBlue; //doesn't change
+    background-color: $lightWhite; //doesn't change
+    border-radius: 10px;
+    .title{
+        @include title-styler;
+        img{
+            @include img-styler;
+            border: 3px solid $lightGrey; //doesn't change
+        }
+        .title-text{
+            padding: 0px 5px;
+        }
+        p{
+            color: $greyBlue;
+            @include p-styler;
+        }
+    }
+    .intro-title{
+        padding: 10px 30px;
+    }
+    .testimony{
+        @include testimony;
+    }
+}
+
+// styles card-d
+
+.card-d{
+    color: $white; //doesn't change
+    background-color: $blackBlue; //doesn't change
+    border-radius: 10px;
+    .title{
+        @include title-styler;
+        img{
+            @include img-styler;
+            border: 3px solid $profileViolet; //doesn't change
+        }
+        .title-text{
+            padding: 0px 5px;
+        }
+        p{
+            color: $greyBlue; //doesn't change
+            @include p-styler;
+        }
+    }
+    .intro-title{
+        padding: 10px 30px;
+    }
+    .testimony{
+        @include testimony;
+    }
+}
+
+// Styles card-e
+
+.card-e{
+    color: $greyBlue; //doesn't change
+    background-color: $lightWhite; //doesn't change
+    border-radius: 10px;
+    .title{
+        @include title-styler;
+        img{
+            @include img-styler;
+            border: 3px solid $lightGrey; 
+        }
+        .title-text{
+            padding: 0px 5px;
+        }
+        p{
+            color: $greyBlue;
+            @include p-styler;
+        }
+    }
+    .intro-title{
+        padding: 10px 30px;
+    }
+    .testimony{
+        @include testimony;
+    }
+}

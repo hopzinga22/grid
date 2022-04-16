@@ -1,0 +1,22 @@
+@mixin p-styler {
+    opacity: 0.8;
+    font-weight: 600;
+}
+
+@mixin testimony {
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    opacity: 0.6;
+}
+
+@mixin title-styler {
+    display: flex;
+    align-items: center;
+    padding:10px 0px 0px 20px;
+}
+
+@mixin img-styler {
+    width: 50px;
+    border-radius: 100px;
+}
