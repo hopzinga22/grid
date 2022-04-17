@@ -34,6 +34,7 @@ body {
   color: #f5f6fa;
   background-color: #804fcf;
   border-radius: 10px;
+  box-shadow: 0 0 3em rgba(0, 0, 0, 0.3);
 }
 .card-a .title {
   display: flex;
@@ -67,6 +68,7 @@ body {
   color: #f5f6fa;
   background-color: #48556a;
   border-radius: 10px;
+  box-shadow: 0 0 3em rgba(0, 0, 0, 0.3);
 }
 .card-b .title {
   display: flex;
@@ -100,6 +102,7 @@ body {
   color: #48556a;
   background-color: #d4d5da;
   border-radius: 10px;
+  box-shadow: 0 0 3em rgba(0, 0, 0, 0.3);
 }
 .card-c .title {
   display: flex;
@@ -133,6 +136,7 @@ body {
   color: #f5f6fa;
   background-color: #19212e;
   border-radius: 10px;
+  box-shadow: 0 0 3em rgba(0, 0, 0, 0.3);
 }
 .card-d .title {
   display: flex;
@@ -166,6 +170,7 @@ body {
   color: #48556a;
   background-color: #d4d5da;
   border-radius: 10px;
+  box-shadow: 0 0 3em rgba(0, 0, 0, 0.3);
 }
 .card-e .title {
   display: flex;
@@ -186,7 +191,7 @@ body {
   font-weight: 600;
 }
 .card-e .intro-title {
-  padding: 10px 30px;
+  padding: 10px 25px;
 }
 .card-e .testimony {
   padding: 10px 30px;
